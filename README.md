@@ -1,5 +1,9 @@
 # Cursor Replica
 
+## Web app link
+
+https://cursor-replica-sepia.vercel.app/
+
 ## Which sections were recreated
 
 - Header
