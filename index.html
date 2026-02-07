@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cursor - The AI Code Editor. Built to make you extraordinarily productive.">
+    <title>Cursor - The AI Code Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header / Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="logo" aria-label="Cursor Homepage">
+                <svg id="Ebene_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 2238.7 532.09"
+                    class="logo-svg">
+                    <defs>
+                        <style>
+                            .st0 {
+                                fill: #edecec;
+                            }
+                        </style>
+                    </defs>
+                    <path class="st0"
+                        d="M457.43,125.94L244.42,2.96c-6.84-3.95-15.28-3.95-22.12,0L9.3,125.94c-5.75,3.32-9.3,9.46-9.3,16.11v247.99c0,6.64,3.55,12.79,9.3,16.11l213.01,122.98c6.84,3.95,15.28,3.95,22.12,0l213.01-122.98c5.75-3.32,9.3-9.46,9.3-16.11v-247.99c0-6.64-3.55-12.79-9.3-16.11h-.01ZM444.05,151.99l-205.63,356.16c-1.39,2.4-5.06,1.42-5.06-1.36v-233.21c0-4.66-2.49-8.97-6.53-11.31L24.87,145.67c-2.4-1.39-1.42-5.06,1.36-5.06h411.26c5.84,0,9.49,6.33,6.57,11.39h-.01Z" />
+                    <g>
+                        <path class="st0"
+                            d="M722.44,138.08h90.64v49.93h-87.57c-47.24,0-84.11,27.27-84.11,84.88s36.87,84.88,84.11,84.88h87.57v49.93h-94.48c-79.12,0-135.19-46.47-135.19-134.8s59.91-134.8,139.03-134.8v-.02Z" />
+                        <path class="st0"
+                            d="M859.17,138.08h56.07v164.76c0,41.09,18.82,60.3,62.99,60.3s62.99-19.2,62.99-60.3v-164.76h56.07v176.28c0,59.91-38.02,97.94-119.06,97.94s-119.06-38.41-119.06-98.32v-175.9h0Z" />
+                        <path class="st0"
+                            d="M1390.32,214.5c0,29.96-17.28,53-40.33,62.99v.77c24.2,3.46,36.49,20.74,36.87,44.17l1.15,85.26h-56.07l-1.15-76.04c-.38-16.9-10.37-27.27-30.34-27.27h-93.33v103.31h-56.07V138.08h154.78c50.7,0,84.49,25.73,84.49,76.43h0ZM1333.86,222.19c0-23.04-12.29-35.72-35.33-35.72h-91.41v71.43h92.17c21.12,0,34.57-12.67,34.57-35.72h0Z" />
+                        <path class="st0"
+                            d="M1602.31,328.95c0-19.2-12.29-27.27-30.72-28.8l-62.22-5.76c-53.77-4.99-81.81-26.12-81.81-77.2s34.57-79.12,84.11-79.12h137.49v48.39h-133.65c-19.2,0-31.49,9.99-31.49,29.19s12.67,28.42,31.88,29.96l63.37,5.38c48.01,4.22,79.5,26.12,79.5,77.58s-33.41,79.12-80.65,79.12h-143.64v-48.39h138.26c18.05,0,29.57-12.29,29.57-30.34h0Z" />
+                        <path class="st0"
+                            d="M1822.77,133.47c84.49,0,137.88,54.15,137.88,139.03s-55.69,139.8-140.18,139.8-137.88-54.92-137.88-139.8,55.69-139.03,140.18-139.03ZM1902.65,272.88c0-56.84-33.03-90.25-81.04-90.25s-81.04,33.41-81.04,90.25,33.03,90.25,81.04,90.25,81.04-33.41,81.04-90.25Z" />
+                        <path class="st0"
+                            d="M2238.7,214.5c0,29.96-17.28,53-40.33,62.99v.77c24.2,3.46,36.49,20.74,36.87,44.17l1.15,85.26h-56.07l-1.15-76.04c-.38-16.9-10.37-27.27-30.34-27.27h-93.33v103.31h-56.07V138.08h154.78c50.7,0,84.49,25.73,84.49,76.43h0ZM2182.24,222.19c0-23.04-12.29-35.72-35.33-35.72h-91.41v71.43h92.17c21.12,0,34.57-12.67,34.57-35.72h0Z" />
+                    </g>
+                </svg>
+            </a>
+            <div class="nav-links">
+                <a href="#" class="nav-link">Product <span class="dropdown-caret">▾</span></a>
+                <a href="#" class="nav-link">Enterprise</a>
+                <a href="#" class="nav-link">Pricing</a>
+                <a href="#" class="nav-link">Resources <span class="dropdown-caret">▾</span></a>
+            </div>
+            <div class="nav-actions">
+                <a href="#" class="nav-link signin">Sign in</a>
+                <a href="#" class="btn btn-primary">Download</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Built to make you extraordinarily productive,<br>Cursor is the best way to code with
+                AI.</h1>
+            <a href="#" class="btn btn-download">
+                <svg class="apple-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+                </svg>
+                Download for macOS
+                <div aria-hidden="true" class="btn-icon"><span class="icon-glyph-08" aria-hidden="true">⤓</span></div>
+            </a>
+        </div>
+        <div class="hero-image-container">
+            <img src="assets/hero-background.jpg" alt="Cursor IDE" class="hero-image">
+        </div>
+    </section>
+
+    <!-- Trusted By Section -->
+    <section class="trusted-by">
+        <p class="trusted-title">Trusted every day by teams that build world-class software</p>
+        <div class="logo-row">
+            <div class="logo-card"><img src="assets/stripe-logo-dark.svg" alt="Stripe" class="company-logo"></div>
+            <div class="logo-card"><img src="assets/openai-logo-dark.svg" alt="OpenAI" class="company-logo"></div>
+            <div class="logo-card"><img src="assets/linear-logo-dark.svg" alt="Linear" class="company-logo"></div>
+            <div class="logo-card"><img src="assets/datadog-logo-dark.svg" alt="Datadog" class="company-logo"></div>
+            <div class="logo-card"><img src="assets/nvidia-logo-dark.svg" alt="NVIDIA" class="company-logo"></div>
+            <div class="logo-card"><img src="assets/figma-logo-dark.svg" alt="Figma" class="company-logo"></div>
+            <div class="logo-card"><img src="assets/ramp-logo-dark.svg" alt="Ramp" class="company-logo"></div>
+            <div class="logo-card"><img src="assets/adobe-logo-dark.svg" alt="Adobe" class="company-logo"></div>
+        </div>
+    </section>
+
+    <!-- Agents Section -->
+    <section class="feature-section agents-section">
+        <div class="feature-content">
+            <div class="feature-text">
+                <h3 class="feature-title">Agents turn ideas into code</h3>
+                <p class="feature-description">Accelerate development by handing off tasks to Cursor, while you focus on
+                    making decisions.</p>
+                <a href="#" class="feature-link">Learn about agentic development →</a>
+            </div>
+            <div class="feature-visual">
+                <div class="composer-card">
+                    <div class="composer-header">
+                        <span class="composer-title">Composer</span>
+                        <span class="composer-mode">Agent</span>
+                    </div>
+                    <div class="composer-content">
+                        <div class="composer-message">
+                            <span class="composer-avatar">✦</span>
+                            <div class="composer-text">
+                                <p>I'll help you build a task management app with a modern UI.</p>
+                                <div class="composer-actions">
+                                    <span class="action-tag">Creating files...</span>
+                                    <span class="action-tag">Installing dependencies...</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Autocomplete Section -->
+    <section class="feature-section autocomplete-section">
+        <div class="feature-content reverse">
+            <div class="feature-visual">
+                <div class="code-card">
+                    <div class="code-header">
+                        <span class="code-filename">app.tsx</span>
+                    </div>
+                    <div class="code-content">
+                        <pre><code><span class="code-keyword">function</span> <span class="code-function">TaskList</span>() {
+  <span class="code-keyword">const</span> [tasks, setTasks] = <span class="code-function">useState</span>([]);
+  
+  <span class="code-keyword">return</span> (
+    <span class="code-tag">&lt;div&gt;</span>
+      <span class="code-ghost">{tasks.map(task => (</span>
+      <span class="code-ghost">  &lt;TaskItem key={task.id} {...task} /&gt;</span>
+      <span class="code-ghost">))}</span>
+    <span class="code-tag">&lt;/div&gt;</span>
+  );
+}</code></pre>
+                        <div class="tab-hint">
+                            <span class="tab-key">Tab</span>
+                            <span class="tab-text">to accept</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feature-text">
+                <h2 class="feature-title">Magically accurate<br>autocomplete</h2>
+                <p class="feature-description">Cursor predicts your next edit and suggests completions that fit
+                    seamlessly with your codebase.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stay on the Frontier Section -->
+    <section class="frontier-section">
+        <div class="frontier-header">
+            <h2 class="section-title">Stay on the frontier</h2>
+            <p class="section-subtitle">Cursor uses the most intelligent models, alongside specialized software
+                engineering infrastructure.</p>
+        </div>
+        <div class="frontier-cards">
+            <div class="frontier-card">
+                <div class="frontier-card-header">
+                    <h3>Frontier Models</h3>
+                </div>
+                <p class="frontier-card-text">Access to GPT-4, Claude 3.5, and other frontier models for the most
+                    advanced AI capabilities.</p>
+            </div>
+            <div class="frontier-card">
+                <div class="frontier-card-header">
+                    <h3>Works Everywhere</h3>
+                </div>
+                <p class="frontier-card-text">Cursor integrates with your existing workflow—GitHub, Slack, Terminal, and
+                    more.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integrations Section -->
+    <section class="integrations-section">
+        <div class="integrations-header">
+            <h2 class="section-title">In every tool, at every step</h2>
+        </div>
+        <div class="integrations-grid">
+            <div class="integration-card">
+                <div class="integration-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                </div>
+                <h3>GitHub PRs</h3>
+                <p>Review and write code directly from pull requests.</p>
+            </div>
+            <div class="integration-card">
+                <div class="integration-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M5.042 15.165a2.528 2.528 0 0 1-2.52 2.523A2.528 2.528 0 0 1 0 15.165a2.527 2.527 0 0 1 2.522-2.52h2.52v2.52zM6.313 15.165a2.527 2.527 0 0 1 2.521-2.52 2.527 2.527 0 0 1 2.521 2.52v6.313A2.528 2.528 0 0 1 8.834 24a2.528 2.528 0 0 1-2.521-2.522v-6.313zM8.834 5.042a2.528 2.528 0 0 1-2.521-2.52A2.528 2.528 0 0 1 8.834 0a2.528 2.528 0 0 1 2.521 2.522v2.52H8.834zM8.834 6.313a2.528 2.528 0 0 1 2.521 2.521 2.528 2.528 0 0 1-2.521 2.521H2.522A2.528 2.528 0 0 1 0 8.834a2.528 2.528 0 0 1 2.522-2.521h6.312zM18.956 8.834a2.528 2.528 0 0 1 2.522-2.521A2.528 2.528 0 0 1 24 8.834a2.528 2.528 0 0 1-2.522 2.521h-2.522V8.834zM17.688 8.834a2.528 2.528 0 0 1-2.523 2.521 2.527 2.527 0 0 1-2.52-2.521V2.522A2.527 2.527 0 0 1 15.165 0a2.528 2.528 0 0 1 2.523 2.522v6.312zM15.165 18.956a2.528 2.528 0 0 1 2.523 2.522A2.528 2.528 0 0 1 15.165 24a2.527 2.527 0 0 1-2.52-2.522v-2.522h2.52zM15.165 17.688a2.527 2.527 0 0 1-2.52-2.523 2.526 2.526 0 0 1 2.52-2.52h6.313A2.527 2.527 0 0 1 24 15.165a2.528 2.528 0 0 1-2.522 2.523h-6.313z" />
+                    </svg>
+                </div>
+                <h3>Slack</h3>
+                <p>Get context from your team's conversations.</p>
+            </div>
+            <div class="integration-card">
+                <div class="integration-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 2v12h16V6H4zm2 2h2v2H6V8zm0 4h2v2H6v-2zm4-4h8v2h-8V8zm0 4h8v2h-8v-2z" />
+                    </svg>
+                </div>
+                <h3>Terminal</h3>
+                <p>Run commands and debug errors inline.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="testimonials-header">
+            <h2 class="section-title">The new way to build software.</h2>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <p class="testimonial-quote">"Cursor is a game changer for developer productivity. It's like having a
+                    senior engineer pair programming with you 24/7."</p>
+                <div class="testimonial-author">
+                    <img src="assets/diana-hu-avatar.png" alt="Diana Hu" class="author-avatar">
+                    <div class="author-info">
+                        <span class="author-name">Diana Hu</span>
+                        <span class="author-title">Partner at Y Combinator</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-quote">"We now have the technology to make every developer as good as the best
+                    developer."</p>
+                <div class="testimonial-author">
+                    <img src="assets/andrej-karpathy-avatar.png" alt="Andrej Karpathy" class="author-avatar">
+                    <div class="author-info">
+                        <span class="author-name">Andrej Karpathy</span>
+                        <span class="author-title">Eureka Labs</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-quote">"Cursor has fundamentally changed how I write code. It's not just
+                    autocomplete—it actually understands what I'm trying to build."</p>
+                <div class="testimonial-author">
+                    <img src="assets/patrick-collison-avatar.png" alt="Patrick Collison" class="author-avatar">
+                    <div class="author-info">
+                        <span class="author-name">Patrick Collison</span>
+                        <span class="author-title">CEO at Stripe</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-quote">"I use Cursor every day now. It's become an essential part of my workflow."
+                </p>
+                <div class="testimonial-author">
+                    <img src="assets/shadcn-avatar.png" alt="shadcn" class="author-avatar">
+                    <div class="author-info">
+                        <span class="author-name">shadcn</span>
+                        <span class="author-title">Creator of shadcn/ui</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-quote">"The future of programming is here. Cursor makes AI-assisted coding feel
+                    natural and powerful."</p>
+                <div class="testimonial-author">
+                    <img src="assets/greg-brockman-avatar.jpg" alt="Greg Brockman" class="author-avatar">
+                    <div class="author-info">
+                        <span class="author-name">Greg Brockman</span>
+                        <span class="author-title">President at OpenAI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2 class="cta-title">Try Cursor today</h2>
+            <p class="cta-subtitle">See why thousands of developers are switching to Cursor.</p>
+            <a href="#" class="btn btn-download btn-large">
+                <svg class="apple-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+                </svg>
+                Download for macOS
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4 class="footer-heading">Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Download</a></li>
+                        <li><a href="#">Changelog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Status</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Social</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">Discord</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-logo">
+                    <svg fill="none" viewBox="0 0 2193 545" xmlns="http://www.w3.org/2000/svg" class="logo-svg small">
+                        <g fill="currentColor">
+                            <path
+                                d="m466.383 137.073-206.469-119.2034c-6.63-3.8287-14.811-3.8287-21.441 0l-206.4586 119.2034c-5.5734 3.218-9.0144 9.169-9.0144 15.615v240.375c0 6.436 3.441 12.397 9.0144 15.615l206.4686 119.203c6.63 3.829 14.811 3.829 21.441 0l206.468-119.203c5.574-3.218 9.015-9.17 9.015-15.615v-240.375c0-6.436-3.441-12.397-9.015-15.615zm-12.969 25.25-199.316 345.223c-1.347 2.326-4.904 1.376-4.904-1.319v-226.048c0-4.517-2.414-8.695-6.33-10.963l-195.7577-113.019c-2.3263-1.347-1.3764-4.905 1.3182-4.905h398.6305c5.661 0 9.199 6.136 6.368 11.041h-.009z">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+                <div class="theme-switcher">
+                    <button class="theme-btn active">System</button>
+                    <button class="theme-btn">Light</button>
+                    <button class="theme-btn">Dark</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
