@@ -4,6 +4,8 @@
 
 https://cursor-replica-sepia.vercel.app/
 
+## Purpose of this repo
+This is a replica of the cursor.com website created using HTML and CSS for *learning purposes*.
 ## Which sections were recreated
 
 - Header
