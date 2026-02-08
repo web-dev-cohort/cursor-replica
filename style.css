@@ -454,12 +454,15 @@ button {
    ========================================= */
 .testimonials-section {
     padding: var(--spacing-5xl) var(--spacing-xl);
-    background: var(--color-bg-secondary);
+
 }
 
 .testimonials-header {
     text-align: center;
     margin-bottom: var(--spacing-3xl);
+    font-size: var(--font-size-2xl);
+
+
 }
 
 .testimonials-grid {
@@ -471,9 +474,9 @@ button {
 }
 
 .testimonial-card {
-    background: var(--color-bg);
+    background-color: #1b1913;
     padding: var(--spacing-2xl);
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-sm);
     border: 1px solid var(--color-border);
     display: flex;
     flex-direction: column;
