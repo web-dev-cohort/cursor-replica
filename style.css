@@ -1,8 +1,4 @@
-/* =========================================
-   Cursor.com Replica - Complete Stylesheet
-   ========================================= */
-
-/* @font-face declarations for Cursor fonts */
+/* @font-face declarations */
 @font-face {
     font-family: 'CursorGothic';
     src: url('assets/fonts/CursorGothic_Regular.woff2') format('woff2');
@@ -51,9 +47,9 @@
     font-display: swap;
 }
 
-/* CSS Custom Properties / Design Tokens */
+/* CSS Custom Properties */
 :root {
-    /* Colors - Dark Theme (matching cursor.com) */
+    /* Colors - Dark Theme */
     --color-bg: #14120b;
     --color-bg-secondary: #0a0908;
     --color-text-primary: #ffffff;
@@ -460,7 +456,6 @@ button {
    ========================================= */
 .testimonials-section {
     padding: var(--spacing-5xl) var(--spacing-xl);
-    background: var(--color-bg-secondary);
 }
 
 .testimonials-header {
@@ -472,7 +467,6 @@ button {
     letter-spacing: -0.005em;
     font-family: var(--font-family);
     color: var(--color-text-secondary);
-
 }
 
 .testimonials-grid {
