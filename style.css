@@ -58,7 +58,7 @@
     --color-bg-secondary: #0a0908;
     --color-text-primary: #ffffff;
     --color-text-secondary: #edecec;
-    --color-text-tertiary: rgba(237, 236, 236, 0.6);
+    --color-text-tertiary: oklab(0.943853 0.00107113 0.000336707 / 0.6);
     --color-border: rgba(237, 236, 236, 0.1);
     --color-border-strong: rgba(237, 236, 236, 0.2);
     --color-accent: #f54e00;
@@ -301,7 +301,6 @@ button {
 }
 
 .hero-title {
-
     font-size: 24px;
     font-weight: 400;
     line-height: 1.4;
@@ -315,13 +314,20 @@ button {
     max-width: var(--max-width);
     margin: var(--spacing-3xl) auto var(--spacing-3xl);
     padding: 0 var(--spacing-xl);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-
 
 .hero-image {
     border-radius: var(--radius-lg);
     width: 100%;
+}
+
+.hero-image-cursor {
+    position: absolute;
+    width: 80%;
+    z-index: 1;
 }
 
 /* =========================================
@@ -336,7 +342,7 @@ button {
 .trusted-title {
     font-size: var(--font-size-sm);
     font-weight: 500;
-    color: var(--color-text-tertiary);
+    color: var(--color-text-secondary);
     letter-spacing: 0.02em;
     margin-bottom: var(--spacing-xl);
 }
@@ -460,6 +466,13 @@ button {
 .testimonials-header {
     text-align: center;
     margin-bottom: var(--spacing-3xl);
+    font-size: var(--font-size-2xl);
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: -0.005em;
+    font-family: var(--font-family);
+    color: var(--color-text-secondary);
+
 }
 
 .testimonials-grid {
@@ -467,12 +480,12 @@ button {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: var(--spacing-xl);
+    gap: var(--spacing-md);
 }
 
 .testimonial-card {
     background: var(--color-bg);
-    padding: var(--spacing-2xl);
+    padding: var(--spacing-md);
     border-radius: var(--radius-lg);
     border: 1px solid var(--color-border);
     display: flex;
@@ -489,7 +502,7 @@ button {
 .testimonial-quote {
     font-size: var(--font-size-base);
     line-height: 1.7;
-    color: var(--color-text-primary);
+    color: var(--color-text-secondary);
     flex: 1;
 }
 
@@ -497,6 +510,7 @@ button {
     display: flex;
     align-items: center;
     gap: var(--spacing-md);
+
 }
 
 .author-avatar {
@@ -515,11 +529,12 @@ button {
 .author-name {
     font-size: var(--font-size-sm);
     font-weight: 600;
+    color: var(--color-text-secondary);
 }
 
 .author-title {
     font-size: var(--font-size-xs);
-    color: var(--color-text-secondary);
+    color: var(--color-text-tertiary);
 }
 
 /* =========================================
