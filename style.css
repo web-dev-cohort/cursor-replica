@@ -57,6 +57,7 @@
     --color-text-tertiary: oklab(0.943853 0.00107113 0.000336707 / 0.6);
     --color-border: rgba(237, 236, 236, 0.1);
     --color-border-strong: rgba(237, 236, 236, 0.2);
+    --color-border-tertiary: oklab(0.943853 0.00107113 0.000336707 / 0.025);
     --color-accent: #f54e00;
     --color-accent-hover: oklab(0.652196 0.168318 0.131453 / 0.75);
     --color-btn-primary: #edecec;
@@ -65,7 +66,10 @@
     --color-glow-1: rgba(99, 102, 241, 0.3);
     --color-glow-2: rgba(168, 85, 247, 0.2);
     --color-glow-3: rgba(59, 130, 246, 0.15);
-
+    --color-theme-card-hover-hex: #201e18;
+    --color-theme-card-hex: #1b1913;
+    --color-theme-card-03-hex: #26241e;
+    --color-theme-card-04-hex: #2b2923;
     /* Typography */
     --font-family: 'CursorGothic', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     --font-family-mono: 'BerkeleyMono', 'SF Mono', Monaco, 'Cascadia Code', monospace;
@@ -362,6 +366,7 @@ button {
     background-color: #1b1913;
     border-radius: 4px;
     padding: var(--spacing-md);
+    border: 1px solid var(--color-border-tertiary);
 }
 
 .company-logo {
@@ -394,6 +399,7 @@ button {
     background-color: #1b1913;
     border-radius: var(--radius-lg);
     padding: var(--spacing-xl);
+    border: 1px solid var(--color-border-tertiary);
 }
 
 .feature-content.reverse {
@@ -478,19 +484,14 @@ button {
 }
 
 .testimonial-card {
-    background: var(--color-bg);
+    background: var(--color-theme-card-hex);
     padding: var(--spacing-md);
     border-radius: var(--radius-lg);
-    border: 1px solid var(--color-border);
+    border: 1px solid var(--color-border-tertiary);
     display: flex;
     flex-direction: column;
     gap: var(--spacing-xl);
     transition: all var(--transition-base);
-}
-
-.testimonial-card:hover {
-    border-color: var(--color-border-strong);
-    box-shadow: var(--shadow-md);
 }
 
 .testimonial-quote {
@@ -532,6 +533,147 @@ button {
 }
 
 /* =========================================
+   Feature Cards Section
+   ========================================= */
+.feature-cards-section {
+    padding: var(--spacing-3xl) 0;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.feature-cards-heading {
+    font-size: var(--font-size-2xl);
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: -0.005em;
+    font-family: var(--font-family);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-md);
+}
+
+.feature-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-md);
+}
+
+.feature-card {
+    background: var(--color-theme-card-hex);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-sm);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    transition: all var(--transition-base);
+    border: 1px solid var(--color-border-tertiary);
+}
+
+
+.feature-card-title {
+    font-size: var(--font-size-base);
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: -0.005em;
+    font-family: var(--font-family);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-xs);
+}
+
+.feature-card-description {
+    font-size: var(--font-size-base);
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: -0.005em;
+    font-family: var(--font-family);
+    color: var(--color-text-tertiary);
+}
+
+/* =========================================
+   Changelog Section
+   ========================================= */
+.changelog-section {
+    padding: var(--spacing-3xl) 0;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.changelog-header {
+    margin-bottom: var(--spacing-md);
+    font-size: var(--font-size-2xl);
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: -0.005em;
+    font-family: var(--font-family);
+    color: var(--color-text-secondary);
+}
+
+.changelog-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.changelog-card {
+    background-color: #1b1913;
+    padding: var(--spacing-md);
+    border-radius: var(--radius-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    transition: all var(--transition-base);
+    border: 1px solid var(--color-border-tertiary);
+}
+
+.changelog-card:hover {
+    background-color: var(--color-theme-card-hover-hex);
+    cursor: pointer;
+}
+
+.changelog-title {
+    color: var(--color-text-tertiary);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-size: var(--font-size-base);
+    font-weight: 300;
+}
+
+.changelog-version {
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-text-tertiary);
+    padding: 2px 14px;
+    font-size: 12px;
+}
+
+.changelog-description {
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
+}
+
+.research-description {
+    font-size: var(--font-size-2xl);
+    color: var(--color-text-secondary);
+}
+
+.research-content {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-md);
+}
+
+.research-content .feature-text {
+    width: 25%;
+}
+
+.research-content .feature-visual {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+}
+
+/* =========================================
    CTA Section
    ========================================= */
 .cta-section {
@@ -563,8 +705,7 @@ button {
    ========================================= */
 .footer {
     padding: var(--spacing-4xl) var(--spacing-xl) var(--spacing-2xl);
-    background: var(--color-bg);
-    border-top: 1px solid var(--color-border);
+    background: var(--color-theme-card-hex);
 }
 
 .footer-content {
@@ -574,22 +715,21 @@ button {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: var(--spacing-3xl);
     margin-bottom: var(--spacing-3xl);
 }
 
 .footer-heading {
     font-size: var(--font-size-sm);
-    font-weight: 600;
-    margin-bottom: var(--spacing-lg);
-    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-xs);
+    color: var(--color-text-tertiary);
 }
 
 .footer-links {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-md);
+    gap: var(--spacing-xs);
 }
 
 .footer-links a {
@@ -602,31 +742,42 @@ button {
     color: var(--color-text-primary);
 }
 
+.footer-links-after>a:hover::after {
+    content: "↗";
+    margin-left: var(--spacing-xs);
+}
+
 .footer-bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: var(--spacing-2xl);
-    border-top: 1px solid var(--color-border);
 }
 
-.footer-logo {
+.footer-bottom-right {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
     color: var(--color-text-primary);
+}
+
+.footer-copyright {
+    color: var(--color-text-tertiary);
 }
 
 .theme-switcher {
     display: flex;
     gap: var(--spacing-xs);
-    background: var(--color-bg-secondary);
-    padding: 4px;
+    background: var(--color-theme-card-03-hex);
+    padding: 2px;
     border-radius: var(--radius-full);
-    border: 1px solid var(--color-border);
+    border: 1px solid var(--color-border-tertiary);
 }
 
 .theme-btn {
     font-size: var(--font-size-xs);
     font-weight: 500;
-    color: var(--color-text-secondary);
+    color: var(--color-text-tertiary);
     padding: 6px 12px;
     border-radius: var(--radius-full);
     transition: all var(--transition-fast);
@@ -637,9 +788,23 @@ button {
 }
 
 .theme-btn.active {
-    background: var(--color-bg);
+    background-color: var(--color-theme-card-04-hex);
     color: var(--color-text-primary);
     box-shadow: var(--shadow-sm);
+}
+
+.footer-btn {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    color: var(--color-text-primary);
+    padding: 6px 12px;
+    border-radius: var(--radius-full);
+    transition: all var(--transition-fast);
+    border: 1px solid var(--color-border-tertiary);
+    background-color: var(--color-theme-card-03-hex);
 }
 
 /* =========================================
